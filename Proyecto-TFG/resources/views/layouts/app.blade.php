@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Proyecto Laravel 11</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title', 'Mi Tienda en Laravel 12')</title>
+
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 </head>
 <body>
     <div id="app">
-        @yield('content')
+        @include('partials.navbar')
+
+        <div class="container mt-4">
+            @yield('content')
+        </div>
+
+        @include('partials.footer')
     </div>
 </body>
 </html>
+
 {{-- 
     Ejemplo de uso de la directiva vite en un archivo blade
     La directiva vite se encarga de cargar los archivos css y js que se encuentran en la carpeta resources

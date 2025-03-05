@@ -5,7 +5,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 
 <template>
   <footer class="footer">
-    <p>©NuestraTienda</p>
+    <p>&copy; {{ new Date().getFullYear() }} - Mi Tienda</p>
     
      <!--He puesto el _blank para que se abra en una nueva pestaña y el noopener noreferrer para evitar riesgos de seguridad y tener mejor rendimiento-->
     <div class="social-links">
@@ -47,7 +47,6 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 }
 
 .social-links a:hover {
-  transform: scale(1.2);
   color: #0059ff;
 }
 
@@ -72,6 +71,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 }
 
 .internal-links a:hover {
-  color: #ffcc00;
+ 
+  color: #0059ff;
 }
 </style>

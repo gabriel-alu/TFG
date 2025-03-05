@@ -4,19 +4,27 @@ import Footer from './components/Footer.vue';
 </script>
 
 <template>
-    <div>
+    <div class="app-container">
         <Header />
-        
-        <main>
+
+        <main class="content">
             <router-view />
         </main>
-        
+
         <Footer />
     </div>
 </template>
 
 <style>
-main {
-    padding-bottom: 50px; /* Para evitar que el contenido quede tapado por el footer */
+/* Estructura para que el footer quede en la parte inferior */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima de toda la pantalla */
+}
+
+.content {
+    flex: 1; /* Ocupa el espacio disponible y empuja el footer hacia abajo */
+    padding: 20px;
 }
 </style>

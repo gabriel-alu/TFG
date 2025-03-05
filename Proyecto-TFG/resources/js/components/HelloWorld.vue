@@ -1,24 +1,13 @@
-<script setup>
-import Header from './Header.vue';
-import Footer from './Footer.vue';
-
-</script>
-
 <template>
-    <div>
-        <Header />
-        
-        <main>
-            Hola Mundo
-            <router-view />
-        </main>
-        
-        <Footer />
+    <div class="hello-container">
+        <h1>Bienvenido a la Tienda</h1>
+        <p>Explora nuestros productos y ofertas especiales.</p>
     </div>
 </template>
 
-<style>
-main {
-    padding-bottom: 50px; /* Para evitar que el contenido quede tapado por el footer */
+<style scoped>
+.hello-container {
+    text-align: center;
+    margin-top: 50px;
 }
 </style>

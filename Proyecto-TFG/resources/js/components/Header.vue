@@ -3,10 +3,12 @@
         <nav>
             <ul>
                 <!--  https://emojidb.org/inicio-emojis?utm_source=user_search  -->
-                <li><router-link to="/">Inicio🏠</router-link></li>
-                <li><router-link to="/products">Productos🧾</router-link></li>
+                <li><router-link to="/">Inicio</router-link></li>
+                <li><router-link to="/home">Principal</router-link></li>
+               <!-- <li><router-link to="/home">Inicio🏠</router-link></li> -->
+                <li><router-link to="/categorias">Categorias🧾</router-link></li>
                 <li><router-link to="/login">Login🔐</router-link></li>
-                <li><router-link to="/products">Carrito 🛒</router-link></li>
+                <li><router-link to="/cart">Carrito 🛒</router-link></li>
             </ul>
         </nav>
     </header>
@@ -28,5 +30,10 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    transform: scale(1.2);
+    color: #0059ff;
 }
 </style>

@@ -6,7 +6,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 <template>
   <footer class="footer">
     <p>&copy; {{ new Date().getFullYear() }} - Mi Tienda</p>
-    
+
      <!--He puesto el _blank para que se abra en una nueva pestaña y el noopener noreferrer para evitar riesgos de seguridad y tener mejor rendimiento-->
     <div class="social-links">
       <a href="https://www.facebook.com/NuestraTienda" target="_blank" rel="noopener noreferrer">
@@ -31,17 +31,19 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 
 <style scoped>
 .footer {
+  height: 50px;
   display: flex;
-  justify-content: space-around; 
-  align-items: center; 
-  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
   background: #3e5f8a;
   color: white;
+  font-size: 18px; /* Reduce los iconos */
 }
 
 .social-links a {
   margin: 0 10px;
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   transition: transform 0.2s;
 }
@@ -52,9 +54,9 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 
 .internal-links {
   display: flex;
-  flex-direction: row; 
-  justify-content: space-around; 
-  width: 50%; 
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
 }
 
 .internal-links p {
@@ -65,13 +67,13 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 .internal-links a {
   color: white;
   text-decoration: none;
-  margin: 0 10px; 
+  margin: 0 10px;
   font-size: 18px;
   transition: color 0.3s;
 }
 
 .internal-links a:hover {
- 
+
   color: #0059ff;
 }
 </style>
